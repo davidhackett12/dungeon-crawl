@@ -1,0 +1,7 @@
+<h1>Hello Maps</h1>
+
+<ul>
+    {% for map in maps %}
+    <a href= "{{ asset('uploads/maps/' ~ map.fileLocation) }}">{{ map.Name}}</a>
+    {% endfor %}
+</ul>
